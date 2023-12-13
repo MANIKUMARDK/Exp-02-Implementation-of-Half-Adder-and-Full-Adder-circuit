@@ -29,26 +29,45 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure
-
-Connect the supply (+5V) to the circuit
+### Procedure:Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
+
+
 ### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Program:Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by:MANIKUMAR D.K
+RegisterNumber:23013588
+
+1.1.Program to design a half adder:
+module ex3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum=a^b;
+assign carry=a&b;
+endmodule
+
+1.1.Program to design a full adder:
+module ex31(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=a^b^cin;
+assign carry=(a&b)|((a^b)&cin);
+endmodule
 Logic symbol & Truthtable
-RTL realization
+### RTL realization : HALF ADDER: ![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/f243d309-98f0-4c6b-ad8f-46e544ed845c)
+### RTL realisation : FULL ADDER: ![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/5821cbef-0e8d-42da-9ccd-b44d417a4931)
+
 
 ### Output:
 ### RTL
-### TIMING DIAGRAM
+### TIMING DIAGRAM: HALF ADDER :![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/0e9d1c9c-c608-4a05-b639-115cb9e80056)
+### TIMING DIAGRAM: FULL ADDER ![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/9a395b96-8418-448c-b59e-282ca5d1bf68)
 
 
-### TRUTH TABLE 
+
+### TRUTH TABLE HALF ADDER :![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/eb4e49b0-0a33-4d23-be6b-9d2b2ccde132)
+### TRUTH TABLE FULL ADDER:![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/f9aea43f-9cd1-4af6-8d0c-9670a3fa8954)
+
 
 ### Result:
