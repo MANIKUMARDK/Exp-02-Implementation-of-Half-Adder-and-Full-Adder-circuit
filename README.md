@@ -29,17 +29,18 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure:Connect the supply (+5V) to the circuit
+### Procedure
+
+Connect the supply (+5V) to the circuit
 Switch ON the main switch
-If the output is 1, then the led glows.
-
-
-### 
-Program:Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by:MANIKUMAR D.K
+If the output is 1, then the led glows..
+### Program:
+```
+Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by:MANIKUMAR D.K 
 RegisterNumber:23013588
 
-1.1.Program to design a half adder:
+1.Program to design a half adder:
 module ex3(a,b,sum,carry);
 input a,b;
 output sum,carry;
@@ -47,7 +48,7 @@ assign sum=a^b;
 assign carry=a&b;
 endmodule
 
-1.1.Program to design a full adder:
+1.Program to design a full adder:
 module ex31(a,b,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
@@ -55,6 +56,8 @@ assign sum=a^b^cin;
 assign carry=(a&b)|((a^b)&cin);
 endmodule
 Logic symbol & Truthtable
+```
+### Output:
 ### RTL realization : HALF ADDER: ![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/f243d309-98f0-4c6b-ad8f-46e544ed845c)
 ### RTL realisation : FULL ADDER: ![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/5821cbef-0e8d-42da-9ccd-b44d417a4931)
 
