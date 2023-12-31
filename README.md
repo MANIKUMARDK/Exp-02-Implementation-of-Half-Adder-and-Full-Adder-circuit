@@ -73,4 +73,6 @@ Logic symbol & Truthtable
 ### TRUTH TABLE FULL ADDER:![image](https://github.com/MANIKUMARDK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147215581/f9aea43f-9cd1-4af6-8d0c-9670a3fa8954)
 
 
+
 ### Result:
+Thus the half adder and full adder circuit are designed and the truth table for half adder and full adder are verified.
